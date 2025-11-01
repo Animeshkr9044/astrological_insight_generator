@@ -2,6 +2,7 @@
 FastAPI dependency injection.
 """
 from functools import lru_cache
+from fastapi import Depends
 
 from app.config.settings import Settings, get_settings
 from app.services.insight_service import InsightService
@@ -18,19 +19,16 @@ def get_cached_settings() -> Settings:
     return get_settings()
 
 
-def get_insight_service(settings: Settings = None) -> InsightService:
+def get_insight_service(settings: Settings = Depends(get_cached_settings)) -> InsightService:
     """
     Create and return an InsightService instance.
     
     Args:
-        settings: Settings instance (optional, will use default if not provided)
+        settings: Settings instance (injected via dependency)
         
     Returns:
         InsightService instance configured with current settings
     """
-    if settings is None:
-        settings = get_cached_settings()
-    
     # Determine which provider to use
     provider = settings.get_effective_provider()
     api_key = settings.openai_api_key if provider == "openai" else None
