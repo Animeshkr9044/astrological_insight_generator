@@ -45,7 +45,7 @@ The project follows a clean, layered architecture:
 
 1. **Clone the repository**
 ```bash
-git clone <repository-url>
+git clone https://github.com/Animeshkr9044/astrological_insight_generator.git
 cd astrological_insight_generator
 ```
 
@@ -101,6 +101,10 @@ See [VECTOR_STORE_RAG.md](docs/VECTOR_STORE_RAG.md) for detailed documentation.
 Use the automated setup script that handles everything:
 
 ```bash
+# Make script executable (first time only)
+chmod +x setup.sh query.sh
+
+# Run setup
 ./setup.sh
 ```
 
@@ -110,6 +114,19 @@ This script will:
 3. ✅ Initialize vector store (Qdrant)
 4. ✅ Ingest astrological corpus (31 documents)
 5. ✅ Start the API server
+
+**Test it with curl** (in another terminal):
+```bash
+curl -X POST http://localhost:8000/api/v1/insight \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "Ritika",
+    "birth_date": "1995-08-20",
+    "birth_time": "14:30",
+    "birth_place": "Jaipur, India",
+    "language": "en"
+  }'
+```
 
 **With options**:
 ```bash
