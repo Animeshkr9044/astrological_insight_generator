@@ -1,0 +1,82 @@
+﻿✅ Astrological Insight Generator
+📝 Problem Statement
+Build a service that takes a user's birth details (name, date, time, and location of birth) and returns a personalized daily astrological insight, using a combination of zodiac logic and LLM-based language generation.
+________________
+
+
+🎯 Goals
+* Parse and infer zodiac sign from input date/time.
+
+* Use a simplified astrological rule base or dummy logic (e.g., daily prediction per zodiac).
+
+* Call an LLM or pseudo-LLM to generate personalized, natural-language output (e.g., "Today, your grounded nature will help you handle unexpected work pressure.").
+
+* Design the system in a way that makes it easy to plug in real Panchang data or LLMs later.
+________________
+
+
+🧱 Expectations
+   * Clean, modular code using Python or Node.js.
+
+   * REST API or CLI tool that takes input, calls internal modules, and returns JSON/text output.
+
+   * Embedding or prompt generation logic stubbed in (e.g., with HuggingFace or OpenAI wrapper).
+
+   * Hindi or multilingual support is a plus (can use dummy translation functions).
+
+   * Bonus: simple caching or scoring logic to simulate personalization or ranking.
+________________
+
+
+🗃️ Deliverables
+      * Code in a GitHub repo with README.
+
+      * Instructions to run (e.g., python main.py or curl localhost:8000/predict?...).
+
+      * Brief write-up on choices made (models used, data flow, assumptions).
+
+________________
+
+
+📌 Sample Input
+{
+  "name": "Ritika",
+  "birth_date": "1995-08-20",
+  "birth_time": "14:30",
+  "birth_place": "Jaipur, India"
+}
+
+
+📌 Sample Output
+{
+  "zodiac": "Leo",
+  "insight": "Your innate leadership and warmth will shine today. Embrace spontaneity and avoid overthinking.",
+  "language": "en"
+}
+
+
+________________
+
+
+🔍 Evaluation Criteria
+Area
+	Details
+	Code Quality
+	Structure, readability, error handling
+	ML Logic
+	How zodiac is inferred, LLM/prompt logic
+	Extensibility
+	Can you plug in LangChain or a real Panchang API later?
+	Personalization
+	Degree of input-aware or user-aware output
+	Bonus
+	Hindi/NLP awareness, simple caching or modularity
+	________________
+
+
+🧠 Optional Variants
+         * Add an option for Hindi output using IndicTrans2 or NLLB stub.
+
+         * Include a basic vector store-based retrieval from a mock astrological text corpus.
+
+         * Have user profiles (past behavior/preferences) influence the output.

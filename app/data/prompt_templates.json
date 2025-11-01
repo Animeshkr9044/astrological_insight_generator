@@ -1,0 +1,29 @@
+{
+  "templates": {
+    "default": "Generate a personalized daily astrological insight for {name}, a {zodiac_sign}.\n\nZodiac traits: {traits}\nDate: {date}\n\nCreate an encouraging, personalized message (30-50 words) that reflects their zodiac characteristics.",
+    
+    "detailed": "As an expert astrologer, create a personalized daily insight for {name}.\n\nZodiac: {zodiac_sign}\nElement: {element}\nRuling Planet: {ruling_planet}\nKey Traits: {traits}\n\nGuidelines:\n- Be positive and encouraging\n- Reference {zodiac_sign} characteristics naturally\n- Provide actionable guidance\n- Keep it 30-50 words\n- Use warm, conversational tone",
+    
+    "brief": "Daily insight for a {zodiac_sign}:\n{traits}\n\nGenerate a brief, encouraging message (30-50 words) for today.",
+    
+    "career_focused": "Generate a career-focused daily insight for {name}, a {zodiac_sign}.\n\nTraits: {traits}\n\nFocus on professional growth and workplace guidance (30-50 words).",
+    
+    "relationship_focused": "Generate a relationship-focused daily insight for {name}, a {zodiac_sign}.\n\nTraits: {traits}\n\nFocus on interpersonal connections and emotional growth (30-50 words).",
+    
+    "wellness_focused": "Generate a wellness-focused daily insight for {name}, a {zodiac_sign}.\n\nTraits: {traits}\n\nFocus on physical and mental well-being (30-50 words)."
+  },
+  
+  "system_prompts": {
+    "default": "You are an expert astrologer providing personalized, encouraging daily insights.",
+    "empathetic": "You are a compassionate astrologer who understands the emotional needs of your clients.",
+    "motivational": "You are an inspiring astrologer who motivates people to reach their full potential."
+  },
+  
+  "tone_modifiers": {
+    "encouraging": "Be uplifting and supportive",
+    "practical": "Provide actionable, grounded advice",
+    "spiritual": "Include spiritual and mystical elements",
+    "modern": "Use contemporary, relatable language"
+  }
+}
+

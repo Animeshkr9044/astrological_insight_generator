@@ -1,0 +1,77 @@
+{
+  "traits": {
+    "Aries": {
+      "positive": ["bold", "energetic", "pioneering", "confident", "courageous"],
+      "keywords": ["leadership", "courage", "initiative", "action", "independence"],
+      "strengths": ["Natural leaders", "Quick decision makers", "Highly motivated"],
+      "focus_areas": ["Taking initiative", "Physical activities", "New beginnings"]
+    },
+    "Taurus": {
+      "positive": ["grounded", "reliable", "patient", "practical", "devoted"],
+      "keywords": ["stability", "determination", "sensuality", "loyalty", "comfort"],
+      "strengths": ["Extremely dependable", "Patient and calm", "Strong work ethic"],
+      "focus_areas": ["Building stability", "Enjoying comforts", "Long-term planning"]
+    },
+    "Gemini": {
+      "positive": ["versatile", "communicative", "witty", "curious", "adaptable"],
+      "keywords": ["communication", "duality", "intelligence", "flexibility", "social"],
+      "strengths": ["Excellent communicators", "Quick learners", "Highly adaptable"],
+      "focus_areas": ["Communication", "Learning", "Social connections"]
+    },
+    "Cancer": {
+      "positive": ["nurturing", "intuitive", "emotional", "protective", "compassionate"],
+      "keywords": ["emotion", "home", "family", "nurturing", "intuition"],
+      "strengths": ["Deeply caring", "Strong intuition", "Emotionally intelligent"],
+      "focus_areas": ["Family matters", "Emotional healing", "Creating security"]
+    },
+    "Leo": {
+      "positive": ["confident", "charismatic", "generous", "creative", "warm-hearted"],
+      "keywords": ["leadership", "creativity", "passion", "warmth", "drama"],
+      "strengths": ["Natural born leaders", "Extremely generous", "Creative"],
+      "focus_areas": ["Self-expression", "Creative projects", "Leadership roles"]
+    },
+    "Virgo": {
+      "positive": ["analytical", "practical", "diligent", "reliable", "modest"],
+      "keywords": ["service", "health", "precision", "analysis", "improvement"],
+      "strengths": ["Highly organized", "Detail-oriented", "Practical problem solvers"],
+      "focus_areas": ["Organization", "Health", "Service to others"]
+    },
+    "Libra": {
+      "positive": ["diplomatic", "gracious", "fair-minded", "social", "harmonious"],
+      "keywords": ["balance", "harmony", "justice", "partnership", "beauty"],
+      "strengths": ["Excellent mediators", "Strong sense of justice", "Charming"],
+      "focus_areas": ["Relationships", "Balance", "Aesthetic pursuits"]
+    },
+    "Scorpio": {
+      "positive": ["passionate", "resourceful", "brave", "loyal", "ambitious"],
+      "keywords": ["transformation", "intensity", "power", "mystery", "regeneration"],
+      "strengths": ["Deeply passionate", "Excellent strategists", "Transformative"],
+      "focus_areas": ["Transformation", "Deep connections", "Personal power"]
+    },
+    "Sagittarius": {
+      "positive": ["optimistic", "freedom-loving", "philosophical", "adventurous", "honest"],
+      "keywords": ["adventure", "philosophy", "freedom", "travel", "higher learning"],
+      "strengths": ["Optimistic outlook", "Love of learning", "Adventurous spirit"],
+      "focus_areas": ["Exploration", "Learning", "Personal growth"]
+    },
+    "Capricorn": {
+      "positive": ["responsible", "disciplined", "ambitious", "practical", "patient"],
+      "keywords": ["ambition", "discipline", "responsibility", "structure", "time"],
+      "strengths": ["Highly disciplined", "Goal-oriented", "Responsible"],
+      "focus_areas": ["Career goals", "Long-term planning", "Building structure"]
+    },
+    "Aquarius": {
+      "positive": ["progressive", "independent", "humanitarian", "original", "intellectual"],
+      "keywords": ["innovation", "rebellion", "community", "individuality", "future"],
+      "strengths": ["Visionary thinkers", "Humanitarian", "Innovative"],
+      "focus_areas": ["Innovation", "Social causes", "Intellectual pursuits"]
+    },
+    "Pisces": {
+      "positive": ["compassionate", "artistic", "intuitive", "gentle", "wise"],
+      "keywords": ["spirituality", "compassion", "imagination", "dreams", "mysticism"],
+      "strengths": ["Highly empathetic", "Artistic and creative", "Intuitive"],
+      "focus_areas": ["Spiritual growth", "Creative expression", "Helping others"]
+    }
+  }
+}
+

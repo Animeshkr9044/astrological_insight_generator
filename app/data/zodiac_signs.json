@@ -1,0 +1,137 @@
+{
+  "zodiac_signs": [
+    {
+      "name": "Aries",
+      "symbol": "♈",
+      "date_range": {
+        "start": {"month": 3, "day": 21},
+        "end": {"month": 4, "day": 19}
+      },
+      "element": "Fire",
+      "modality": "Cardinal",
+      "ruling_planet": "Mars"
+    },
+    {
+      "name": "Taurus",
+      "symbol": "♉",
+      "date_range": {
+        "start": {"month": 4, "day": 20},
+        "end": {"month": 5, "day": 20}
+      },
+      "element": "Earth",
+      "modality": "Fixed",
+      "ruling_planet": "Venus"
+    },
+    {
+      "name": "Gemini",
+      "symbol": "♊",
+      "date_range": {
+        "start": {"month": 5, "day": 21},
+        "end": {"month": 6, "day": 20}
+      },
+      "element": "Air",
+      "modality": "Mutable",
+      "ruling_planet": "Mercury"
+    },
+    {
+      "name": "Cancer",
+      "symbol": "♋",
+      "date_range": {
+        "start": {"month": 6, "day": 21},
+        "end": {"month": 7, "day": 22}
+      },
+      "element": "Water",
+      "modality": "Cardinal",
+      "ruling_planet": "Moon"
+    },
+    {
+      "name": "Leo",
+      "symbol": "♌",
+      "date_range": {
+        "start": {"month": 7, "day": 23},
+        "end": {"month": 8, "day": 22}
+      },
+      "element": "Fire",
+      "modality": "Fixed",
+      "ruling_planet": "Sun"
+    },
+    {
+      "name": "Virgo",
+      "symbol": "♍",
+      "date_range": {
+        "start": {"month": 8, "day": 23},
+        "end": {"month": 9, "day": 22}
+      },
+      "element": "Earth",
+      "modality": "Mutable",
+      "ruling_planet": "Mercury"
+    },
+    {
+      "name": "Libra",
+      "symbol": "♎",
+      "date_range": {
+        "start": {"month": 9, "day": 23},
+        "end": {"month": 10, "day": 22}
+      },
+      "element": "Air",
+      "modality": "Cardinal",
+      "ruling_planet": "Venus"
+    },
+    {
+      "name": "Scorpio",
+      "symbol": "♏",
+      "date_range": {
+        "start": {"month": 10, "day": 23},
+        "end": {"month": 11, "day": 21}
+      },
+      "element": "Water",
+      "modality": "Fixed",
+      "ruling_planet": "Pluto"
+    },
+    {
+      "name": "Sagittarius",
+      "symbol": "♐",
+      "date_range": {
+        "start": {"month": 11, "day": 22},
+        "end": {"month": 12, "day": 21}
+      },
+      "element": "Fire",
+      "modality": "Mutable",
+      "ruling_planet": "Jupiter"
+    },
+    {
+      "name": "Capricorn",
+      "symbol": "♑",
+      "date_range": {
+        "start": {"month": 12, "day": 22},
+        "end": {"month": 1, "day": 19}
+      },
+      "element": "Earth",
+      "modality": "Cardinal",
+      "ruling_planet": "Saturn"
+    },
+    {
+      "name": "Aquarius",
+      "symbol": "♒",
+      "date_range": {
+        "start": {"month": 1, "day": 20},
+        "end": {"month": 2, "day": 18}
+      },
+      "element": "Air",
+      "modality": "Fixed",
+      "ruling_planet": "Uranus"
+    },
+    {
+      "name": "Pisces",
+      "symbol": "♓",
+      "date_range": {
+        "start": {"month": 2, "day": 19},
+        "end": {"month": 3, "day": 20}
+      },
+      "element": "Water",
+      "modality": "Mutable",
+      "ruling_planet": "Neptune"
+    }
+  ]
+}
+
