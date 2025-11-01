@@ -13,6 +13,8 @@ dependencies = [
     "python-dotenv>=1.0.0",
     "python-multipart>=0.0.12",
     "pytest>=8.4.2",
+    "qdrant-client>=1.7.0",
+    "sentence-transformers>=2.2.2",
 ]
 
 [project.optional-dependencies]

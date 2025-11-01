@@ -2,11 +2,14 @@
 
 Generate personalized daily astrological insights using zodiac logic and LLM-based language generation.
 
+> **🚀 New here?** Check out the [Quick Start Guide](QUICKSTART.md) to get running in 2 minutes!
+
 ## 📋 Overview
 
 This service takes a user's birth details (name, date, time, and location) and returns personalized daily astrological insights. It combines:
 - **Zodiac calculation** based on birth date
 - **Trait analysis** from comprehensive zodiac databases
+- **RAG (Retrieval-Augmented Generation)** using Qdrant vector store for enhanced accuracy
 - **LLM-based generation** for natural, personalized insights
 - **Multilingual support** (English and Hindi)
 
@@ -19,14 +22,16 @@ The project follows a clean, layered architecture:
 │   ├── api/              # FastAPI routes, schemas, dependencies
 │   ├── services/         # Business logic (InsightService, Validator)
 │   ├── core/            
-│   │   ├── zodiac/      # Zodiac calculation and traits
-│   │   ├── llm/         # LLM client and providers
-│   │   └── translation/ # Translation services
-│   ├── data/            # JSON data files
-│   └── config/          # Settings and configuration
-├── tests/               # Test suite
-├── main.py             # CLI interface
-└── run.py              # FastAPI server runner
+│   │   ├── zodiac/       # Zodiac calculation and traits
+│   │   ├── llm/          # LLM client and providers
+│   │   ├── vector_store/ # RAG using Qdrant + sentence-transformers
+│   │   └── translation/  # Translation services
+│   ├── data/             # JSON data files & astrological corpus
+│   └── config/           # Settings and configuration
+├── docs/                 # Documentation
+├── tests/                # Test suite
+├── main.py              # CLI interface
+└── run.py               # FastAPI server runner
 ```
 
 ## 🚀 Quick Start
@@ -70,11 +75,57 @@ DEBUG=true
 
 **Note**: The mock provider works without any API keys and is great for testing!
 
+### Vector Store (RAG) Configuration
+
+The system uses **Retrieval-Augmented Generation (RAG)** by default for enhanced insights:
+
+```env
+# Vector Store is enabled by default with in-memory Qdrant
+VECTOR_STORE_ENABLED=true
+VECTOR_STORE_MODE=memory
+EMBEDDING_MODEL=all-MiniLM-L6-v2
+```
+
+**Features**:
+- 📚 31+ curated astrological knowledge documents
+- 🔍 Semantic search using sentence-transformers
+- ⚡ Fast in-memory vector database (Qdrant)
+- 🎯 Context-aware LLM prompts
+
+See [VECTOR_STORE_RAG.md](docs/VECTOR_STORE_RAG.md) for detailed documentation.
+
 ### Running the Application
 
-#### Option 1: REST API Server
+#### 🚀 Quick Start (Recommended)
 
-Start the FastAPI server:
+Use the automated setup script that handles everything:
+
+```bash
+./setup.sh
+```
+
+This script will:
+1. ✅ Check prerequisites (Python, uv)
+2. ✅ Install all dependencies
+3. ✅ Initialize vector store (Qdrant)
+4. ✅ Ingest astrological corpus (31 documents)
+5. ✅ Start the API server
+
+**With options**:
+```bash
+# Enable auto-reload for development
+./setup.sh --reload
+
+# Custom host and port
+./setup.sh --host localhost --port 8080
+
+# Show help
+./setup.sh --help
+```
+
+#### Option 1: REST API Server (Manual)
+
+Start the FastAPI server manually:
 ```bash
 python run.py
 ```
@@ -88,7 +139,28 @@ Access the API:
 - **Interactive Docs**: http://localhost:8000/docs
 - **API Root**: http://localhost:8000/api/v1
 
-#### Option 2: CLI
+#### Option 2: Query Script (Easy API Testing)
+
+Use the convenient query script to test the API:
+
+```bash
+# Generate an insight
+./query.sh --name "Ritika" --date "1995-08-20" --time "14:30" --place "Jaipur, India"
+
+# With language option
+./query.sh --name "Ritika" --date "1995-08-20" --time "14:30" --place "Jaipur, India" --language en
+
+# Check API health
+./query.sh --health
+
+# Get zodiac info only
+./query.sh --zodiac "1995-08-20"
+
+# Custom API URL
+./query.sh --url "http://localhost:3000" --name "Ritika" --date "1995-08-20" --time "14:30" --place "Jaipur, India"
+```
+
+#### Option 3: CLI
 
 Generate insights directly from the command line:
 

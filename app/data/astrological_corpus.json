@@ -1,0 +1,191 @@
+{
+  "corpus": [
+    {
+      "id": "aries_traits_1",
+      "zodiac": "Aries",
+      "category": "personality",
+      "text": "Aries individuals are natural-born leaders with a pioneering spirit. Their courage and determination make them excellent at starting new projects and taking initiatives. They possess boundless energy and enthusiasm that inspires others."
+    },
+    {
+      "id": "aries_daily_1",
+      "zodiac": "Aries",
+      "category": "daily_guidance",
+      "text": "For Aries, taking bold action comes naturally. Channel your fiery energy into productive endeavors. Your competitive nature will help you overcome obstacles, but remember to listen to others' perspectives."
+    },
+    {
+      "id": "taurus_traits_1",
+      "zodiac": "Taurus",
+      "category": "personality",
+      "text": "Taurus natives are known for their reliability and practical approach to life. They value stability, comfort, and material security. Their patient and persistent nature helps them achieve long-term goals."
+    },
+    {
+      "id": "taurus_daily_1",
+      "zodiac": "Taurus",
+      "category": "daily_guidance",
+      "text": "Taurus thrives in environments of stability and routine. Your grounded nature helps you make wise financial decisions. Today, focus on building lasting foundations and enjoying life's simple pleasures."
+    },
+    {
+      "id": "gemini_traits_1",
+      "zodiac": "Gemini",
+      "category": "personality",
+      "text": "Gemini individuals are intellectually curious and communicative. Their adaptable nature allows them to thrive in diverse situations. They excel at multitasking and enjoy engaging in stimulating conversations."
+    },
+    {
+      "id": "gemini_daily_1",
+      "zodiac": "Gemini",
+      "category": "daily_guidance",
+      "text": "For Gemini, mental stimulation is essential. Your quick wit and communication skills will shine today. Embrace opportunities for learning and connecting with others. Stay focused to avoid scattering your energy."
+    },
+    {
+      "id": "cancer_traits_1",
+      "zodiac": "Cancer",
+      "category": "personality",
+      "text": "Cancer natives are deeply intuitive and emotionally intelligent. They possess strong nurturing instincts and value family and home. Their empathetic nature makes them excellent caregivers and supportive friends."
+    },
+    {
+      "id": "cancer_daily_1",
+      "zodiac": "Cancer",
+      "category": "daily_guidance",
+      "text": "Cancer's emotional sensitivity is a gift. Trust your intuition when making decisions today. Create a comfortable environment that nurtures your soul. Your caring nature will help others feel supported."
+    },
+    {
+      "id": "leo_traits_1",
+      "zodiac": "Leo",
+      "category": "personality",
+      "text": "Leo individuals radiate confidence and charisma. They have a natural flair for drama and creativity. Their generous spirit and warm heart make them beloved by many. Leadership comes naturally to them."
+    },
+    {
+      "id": "leo_daily_1",
+      "zodiac": "Leo",
+      "category": "daily_guidance",
+      "text": "Leo's innate leadership shines brightest when inspiring others. Your creative energy and enthusiasm are contagious. Embrace opportunities to showcase your talents, but remember to share the spotlight. Your warmth draws people to you."
+    },
+    {
+      "id": "virgo_traits_1",
+      "zodiac": "Virgo",
+      "category": "personality",
+      "text": "Virgo natives are analytical and detail-oriented perfectionists. They have a strong work ethic and desire to be of service to others. Their practical intelligence helps them solve complex problems efficiently."
+    },
+    {
+      "id": "virgo_daily_1",
+      "zodiac": "Virgo",
+      "category": "daily_guidance",
+      "text": "Virgo's attention to detail ensures excellence. Your analytical mind will help you solve problems today. Focus on organizing and improving systems. Remember that perfection is not always necessary - progress matters too."
+    },
+    {
+      "id": "libra_traits_1",
+      "zodiac": "Libra",
+      "category": "personality",
+      "text": "Libra individuals seek balance and harmony in all aspects of life. They have refined taste and appreciation for beauty. Their diplomatic nature makes them excellent mediators and peacemakers."
+    },
+    {
+      "id": "libra_daily_1",
+      "zodiac": "Libra",
+      "category": "daily_guidance",
+      "text": "Libra's natural diplomacy helps resolve conflicts. Your sense of fairness and justice will guide important decisions. Surround yourself with beauty and harmony. Collaborate with others to achieve balanced solutions."
+    },
+    {
+      "id": "scorpio_traits_1",
+      "zodiac": "Scorpio",
+      "category": "personality",
+      "text": "Scorpio natives possess intense emotional depth and transformative power. They are resourceful, passionate, and determined. Their ability to see beneath the surface gives them profound insights."
+    },
+    {
+      "id": "scorpio_daily_1",
+      "zodiac": "Scorpio",
+      "category": "daily_guidance",
+      "text": "Scorpio's intensity and focus are unmatched. Your ability to transform challenges into opportunities will serve you well. Trust your instincts and embrace deep emotional connections. Your power lies in authenticity."
+    },
+    {
+      "id": "sagittarius_traits_1",
+      "zodiac": "Sagittarius",
+      "category": "personality",
+      "text": "Sagittarius individuals are adventurous philosophers with an optimistic outlook. They love freedom, exploration, and learning. Their enthusiasm and honesty make them inspiring companions."
+    },
+    {
+      "id": "sagittarius_daily_1",
+      "zodiac": "Sagittarius",
+      "category": "daily_guidance",
+      "text": "Sagittarius thrives on adventure and expansion. Your optimistic perspective opens new doors. Seek knowledge and explore unfamiliar territories. Your honesty and humor will uplift those around you."
+    },
+    {
+      "id": "capricorn_traits_1",
+      "zodiac": "Capricorn",
+      "category": "personality",
+      "text": "Capricorn natives are ambitious and disciplined achievers. They possess strong organizational skills and long-term vision. Their determination and patience help them climb any mountain."
+    },
+    {
+      "id": "capricorn_daily_1",
+      "zodiac": "Capricorn",
+      "category": "daily_guidance",
+      "text": "Capricorn's discipline and ambition drive success. Your practical approach to challenges yields concrete results. Focus on long-term goals while celebrating small victories. Your perseverance inspires others."
+    },
+    {
+      "id": "aquarius_traits_1",
+      "zodiac": "Aquarius",
+      "category": "personality",
+      "text": "Aquarius individuals are innovative visionaries with humanitarian ideals. They value independence and intellectual freedom. Their unconventional thinking leads to breakthrough ideas."
+    },
+    {
+      "id": "aquarius_daily_1",
+      "zodiac": "Aquarius",
+      "category": "daily_guidance",
+      "text": "Aquarius's innovative spirit brings fresh perspectives. Your unique ideas can revolutionize existing systems. Connect with like-minded individuals who share your vision. Embrace your individuality while contributing to collective goals."
+    },
+    {
+      "id": "pisces_traits_1",
+      "zodiac": "Pisces",
+      "category": "personality",
+      "text": "Pisces natives are compassionate dreamers with artistic souls. They possess deep empathy and spiritual awareness. Their intuitive nature helps them understand others' unspoken feelings."
+    },
+    {
+      "id": "pisces_daily_1",
+      "zodiac": "Pisces",
+      "category": "daily_guidance",
+      "text": "Pisces's compassion and creativity flow naturally. Your intuitive gifts guide you toward meaningful connections. Express yourself through artistic or spiritual pursuits. Your empathy heals and comforts those in need."
+    },
+    {
+      "id": "fire_element_1",
+      "zodiac": "Fire Signs",
+      "category": "elemental_wisdom",
+      "text": "Fire signs (Aries, Leo, Sagittarius) possess dynamic energy and passionate nature. They are action-oriented, enthusiastic, and inspiring. Their warmth and vitality bring light to any situation."
+    },
+    {
+      "id": "earth_element_1",
+      "zodiac": "Earth Signs",
+      "category": "elemental_wisdom",
+      "text": "Earth signs (Taurus, Virgo, Capricorn) are grounded, practical, and reliable. They value stability and tangible results. Their patience and persistence help manifest long-term goals."
+    },
+    {
+      "id": "air_element_1",
+      "zodiac": "Air Signs",
+      "category": "elemental_wisdom",
+      "text": "Air signs (Gemini, Libra, Aquarius) are intellectual, communicative, and social. They excel at analyzing and connecting ideas. Their mental agility helps them adapt to changing circumstances."
+    },
+    {
+      "id": "water_element_1",
+      "zodiac": "Water Signs",
+      "category": "elemental_wisdom",
+      "text": "Water signs (Cancer, Scorpio, Pisces) are emotionally intuitive and sensitive. They possess deep empathy and spiritual awareness. Their emotional intelligence helps them navigate complex relationships."
+    },
+    {
+      "id": "cardinal_modality_1",
+      "zodiac": "Cardinal Signs",
+      "category": "modality_wisdom",
+      "text": "Cardinal signs (Aries, Cancer, Libra, Capricorn) are initiators who start new projects. They possess leadership qualities and pioneering spirit. Their ability to take action drives progress."
+    },
+    {
+      "id": "fixed_modality_1",
+      "zodiac": "Fixed Signs",
+      "category": "modality_wisdom",
+      "text": "Fixed signs (Taurus, Leo, Scorpio, Aquarius) are stable and determined. They excel at maintaining and building upon existing foundations. Their persistence ensures long-term success."
+    },
+    {
+      "id": "mutable_modality_1",
+      "zodiac": "Mutable Signs",
+      "category": "modality_wisdom",
+      "text": "Mutable signs (Gemini, Virgo, Sagittarius, Pisces) are adaptable and flexible. They handle change with ease and help others transition. Their versatility makes them excellent problem-solvers."
+    }
+  ]
+}
+

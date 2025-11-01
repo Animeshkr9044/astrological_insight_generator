@@ -35,6 +35,14 @@ class Settings(BaseSettings):
     translation_enabled: bool = False
     translation_mock: bool = False
     
+    # Vector Store Settings
+    vector_store_enabled: bool = True
+    vector_store_mode: str = "memory"  # "memory" or "server"
+    qdrant_url: Optional[str] = None  # For server mode: "http://localhost:6333"
+    qdrant_api_key: Optional[str] = None
+    embedding_model: str = "all-MiniLM-L6-v2"  # Sentence-transformers model
+    vector_collection_name: str = "astrological_knowledge"
+    
     # Caching Settings (for future use)
     cache_enabled: bool = False
     cache_ttl: int = 86400  # 24 hours in seconds

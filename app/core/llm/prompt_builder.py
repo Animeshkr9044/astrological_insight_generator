@@ -17,6 +17,7 @@ class PromptBuilder:
         traits: Dict,
         birth_date: date,
         current_date: Optional[date] = None,
+        additional_context: Optional[str] = None,
     ) -> str:
         """
         Create a structured prompt for generating personalized daily insights.
@@ -27,6 +28,7 @@ class PromptBuilder:
             traits: Dictionary of zodiac traits
             birth_date: User's birth date
             current_date: Current date (defaults to today)
+            additional_context: Additional context from vector store (RAG)
             
         Returns:
             Formatted prompt string
@@ -49,7 +51,13 @@ Zodiac Information:
 - Key Traits: {positive_traits}
 - Keywords: {keywords}
 
-Date: {current_date.strftime('%B %d, %Y')}
+Date: {current_date.strftime('%B %d, %Y')}"""
+
+        # Add vector store context if available
+        if additional_context:
+            prompt += f"\n\n{additional_context}"
+
+        prompt += f"""
 
 Guidelines:
 1. Create a personalized, encouraging message (30-50 words)

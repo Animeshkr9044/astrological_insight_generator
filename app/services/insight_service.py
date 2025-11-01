@@ -8,6 +8,7 @@ import logging
 from app.core.zodiac.calculator import ZodiacCalculator
 from app.core.llm.client import LLMClient
 from app.core.translation.translator import get_translator
+from app.core.vector_store import VectorStoreService
 from app.services.validator_service import ValidatorService, ValidationError
 
 logger = logging.getLogger(__name__)
@@ -20,6 +21,7 @@ class InsightService:
     This service coordinates between:
     - Input validation
     - Zodiac calculation
+    - Vector store retrieval (RAG)
     - LLM-based insight generation
     - Translation (if needed)
     - Response formatting
@@ -32,6 +34,7 @@ class InsightService:
         model: Optional[str] = None,
         translation_enabled: bool = False,
         translation_mock: bool = False,
+        vector_store_service: Optional[VectorStoreService] = None,
     ):
         """
         Initialize the insight service.
@@ -42,6 +45,7 @@ class InsightService:
             model: Model name
             translation_enabled: Whether translation is enabled
             translation_mock: Whether to use mock translation
+            vector_store_service: Vector store service instance (optional)
         """
         self.validator = ValidatorService()
         self.zodiac_calculator = ZodiacCalculator()
@@ -54,6 +58,7 @@ class InsightService:
             enabled=translation_enabled,
             mock=translation_mock,
         )
+        self.vector_store = vector_store_service
 
     def generate_insight(
         self,
@@ -109,7 +114,22 @@ class InsightService:
             logger.error(f"Error getting zodiac traits: {e}")
             raise Exception(f"Failed to get zodiac traits: {str(e)}")
 
-        # Step 4: Build prompt and generate insight
+        # Step 4: Retrieve relevant context from vector store (RAG)
+        retrieved_context = ""
+        if self.vector_store and self.vector_store.is_available():
+            try:
+                retrieved_context = self.vector_store.get_context_for_insight(
+                    zodiac=zodiac_sign,
+                    name=validated_name,
+                    birth_place=validated_place,
+                    top_k=3,
+                )
+                if retrieved_context:
+                    logger.info("Retrieved context from vector store")
+            except Exception as e:
+                logger.warning(f"Vector store retrieval failed, continuing without context: {e}")
+        
+        # Step 5: Build prompt and generate insight
         try:
             prompt_builder = self.llm_client.get_prompt_builder()
             prompt = prompt_builder.build_insight_prompt(
@@ -118,6 +138,7 @@ class InsightService:
                 traits=traits,
                 birth_date=validated_date,
                 current_date=date.today(),
+                additional_context=retrieved_context,
             )
             
             logger.debug(f"Generated prompt: {prompt}")
@@ -129,7 +150,7 @@ class InsightService:
             logger.error(f"Error generating insight: {e}")
             raise Exception(f"Failed to generate insight: {str(e)}")
 
-        # Step 5: Translate if needed
+        # Step 6: Translate if needed
         if validated_lang != "en":
             try:
                 insight = self.translator.translate(insight, validated_lang)
@@ -138,7 +159,7 @@ class InsightService:
                 logger.warning(f"Translation failed, using English: {e}")
                 validated_lang = "en"
 
-        # Step 6: Format and return response
+        # Step 7: Format and return response
         response = {
             "zodiac": zodiac_sign,
             "insight": insight,
@@ -185,11 +206,18 @@ class InsightService:
         Returns:
             Dictionary with service status
         """
+        vector_store_available = (
+            self.vector_store.is_available() 
+            if self.vector_store 
+            else False
+        )
+        
         return {
             "status": "healthy",
             "llm_provider": self.llm_client.provider_name,
             "llm_available": self.llm_client.is_provider_available(),
             "translation_enabled": self.translator.enabled,
             "supported_languages": self.translator.get_supported_languages(),
+            "vector_store_enabled": vector_store_available,
         }
 
